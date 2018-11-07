@@ -20,7 +20,7 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="D6DRHhMRO78tZjA54twcaKKsG+oqw1pEdQkNhXHd4DMVtd487Hj15edJXtPCjG7QX9HPatzYV7aFNka5Ar+8WA==" />
+<meta name="csrf-token" content="vrMGSt9fh9lP4+MigFjv781fRsQMD8lVPJIV+2agrnOkpgloIDZJg4XMjcigCJ1XMCKSRPoUxKfMrV7HFcLyGA==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -29,9 +29,7 @@
 				<section data-id="070f24c63315d2f75fb75fd7b2146e58">
 <div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 537px; left: 237px; top: 92px; color: rgb(0, 135, 186);" data-block-id="e5203f454ad1b3eff55e378843ce1414"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="2000" data-natural-height="1333" style="" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/956571/images/5446081/pasted-from-clipboard.png"></div></div>
 <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 1280px; height: 720px; left: 0px; top: 0px;" data-block-id="72af29df4cd19cb6a65c14c56661a940"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 135, 186)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1280 720"><rect width="1280" height="720" class="shape-element" fill="rgb(0, 135, 186)"></rect></svg></div></div></section><section data-id="ea93f34aaee79a3737e0ec96a628e717"><div class="sl-block" data-block-type="text" style="width: 806px; left: 237px; top: 24px; height: auto;" data-block-id="497b05635730d8391f22bf2a035b6592"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui"><h1>callbacks</h1></div></div>
-<div class="sl-block" data-block-type="text" style="width: 162px; left: 720px; top: 105px; height: auto;" data-block-id="3edfb60375d5f951a828009076c8c7c7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
-<p>ES5 (<span style="color:rgb(34, 34, 34); text-align:start">2009)</span></p>
-</div></div>
+
 <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 836px; height: 420px; left: 222px; top: 216px;" data-block-id="0c799bcf5e7e0baafd37a33694a25029"><div class="sl-block-content notranslate" style="z-index: 12;"><pre class="typescript"><code>const request = (url: string, callback: (error: Error | null, data: any) =&gt; void) =&gt; {
   const xhr = new XMLHttpRequest();
   xhr.responseType = "json";
@@ -66,7 +64,7 @@ const getPosts = (user: IUser, callback: (error: Error | null, IPost[]) =&gt; vo
     else displayPosts(posts);
   });
 });
-</code></pre></div></div></section><section data-id="6f510f28e0799e28c9deeb5404707c39">
+</code></pre></div></div></section><section class="stack" data-id="6b12578a10dad2f47568867949e39a6b"><section data-id="6f510f28e0799e28c9deeb5404707c39">
 
 <div class="sl-block" data-block-type="code" style="width: 836px; height: 420px; left: 222px; top: 216px;" data-block-id="1adf6b9a7be9133268d8a9de4dd83dd5"><div class="sl-block-content notranslate fragment" style="z-index: 11;" data-fragment-index="0"><pre class="typescript"><code>const request = &lt;T&gt;(url: string) =&gt; new Promise&lt;T&gt;((resolve, reject) =&gt; {
   const xhr = new XMLHttpRequest();
@@ -132,7 +130,35 @@ const getPosts = (user: IUser, callback: (error: Error | null, IPost[]) =&gt; vo
 <div class="sl-block" data-block-type="text" style="width: 806px; left: 237px; top: 24px; height: auto;" data-block-id="b1ef7ec8ba9f57993f7a544a59aec0c7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 17;" dir="ui">
 <h1>promises</h1>
 </div></div>
-<div class="sl-block" data-block-type="text" style="width: 162px; left: 720px; top: 105px; height: auto;" data-block-id="7c874fb0449b1ceb06faab5412d0895d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 18;" dir="ui"><p>ES6 (<span style="color:rgb(34, 34, 34); text-align:start">2015)</span></p></div></div></section><section data-id="7d20f226d30a04a2e857953dbc2a1a3f">
+<div class="sl-block" data-block-type="text" style="width: 162px; left: 720px; top: 105px; height: auto;" data-block-id="7c874fb0449b1ceb06faab5412d0895d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 18;" dir="ui"><p>ES6 (<span style="color:rgb(34, 34, 34); text-align:start">2015)</span></p></div></div></section><section data-id="f84e97cc1268eecae5bb84e658d282ce">
+
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 821px; height: 420px; left: 222px; top: 216px;" data-block-id="82aaf9d184d058e28e4ea8ba707e5844"><div class="sl-block-content notranslate" style="z-index: 11;"><pre class="typescript"><code>Promise.resolve().then(() =&gt; {
+  // microtask, non-blocking
+  // heeft prioriteit over setTimeout(() =&gt; {});
+});
+
+Promise.all([]); 
+// alles wordt parallel uitgevoerd, alles resolved =&gt; then, één of meer rejected =&gt; catch
+
+Promise.race(); 
+// alles wordt parallel uitgevoerd, maar de eerste die resolved is wordt teruggegeven
+
+promise
+  .then(() =&gt; {})
+  .then(() =&gt; {})
+  .catch(() =&gt; {})
+  .finally(() =&gt; {});
+
+const pause = (ms: number) =&gt; new Promise(r =&gt; setTimeout(r, ms));
+pause(1000).then(() =&gt; {});</code></pre></div></div>
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 237px; top: 24px; height: auto;" data-block-id="360855824aeb9b15c74bc044e2be1329"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;" dir="ui">
+<h1>promises</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 162px; left: 720px; top: 105px; height: auto;" data-block-id="244182b907abb0b67cbd892b2599722f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 13;" dir="ui"><p>ES6 (<span style="color:rgb(34, 34, 34); text-align:start">2015)</span></p></div></div></section></section><section class="stack" data-id="83a5eb7fd9849d3a089cdd9d5e7cfa8a"><section data-id="7d20f226d30a04a2e857953dbc2a1a3f">
 
 <div class="sl-block" data-block-type="code" style="width: 836px; height: 420px; left: 222px; top: 216px;" data-block-id="348bb306d53cdadbe27a19b0407b8746"><div class="sl-block-content notranslate" style="z-index: 10;"><pre class="typescript"><code>const request = &lt;T&gt;(url: string) =&gt; new Promise&lt;T&gt;((resolve, reject) =&gt; {
   const xhr = new XMLHttpRequest();
@@ -175,7 +201,31 @@ const getPosts = (user: IUser) =&gt;
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 162px; left: 720px; top: 105px; height: auto;" data-block-id="a34340c11a208c7e6e0c765a6678944a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 16;" dir="ui">
 <p><span>ES8 (</span><span style="color:rgb(34, 34, 34); text-align:start">2017)</span></p>
-</div></div></section><section class="stack" data-id="06ae30d60673e97e4852a4c331d8d4e7"><section data-id="712251b0a0386a33fe44c069a6146610"><div class="sl-block" data-block-type="text" style="width: 806px; left: 237px; top: 24px; height: auto;" data-block-id="44bff0658828ca53d40df99eb2490498"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+</div></div></section><section data-id="e0a464029129b385522b9eaee86e757d">
+
+<div class="sl-block" data-block-type="code" style="width: 836px; height: 420px; left: 222px; top: 216px;" data-block-id="b129fd9f8c0a54dcbebe320261f4e120"><div class="sl-block-content notranslate" style="z-index: 10;"><pre class="typescript"><code>// BAD
+arrayOfPromises.forEach(async promise =&gt; {
+  await promise();
+});
+
+// GOOD
+const results = await Promise.all(arrayOfPromises);
+
+for (const x of await Promise.all(arrayOfPromises)) {
+  // eerst parallel resolved, dan de loop
+}
+
+for await (const x of arrayOfPromises) {
+  // sequentieel resolved
+}</code></pre></div></div>
+
+
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 237px; top: 24px; height: auto;" data-block-id="b07ab764caa9f88fe914064b5885b0f3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 14;" dir="ui">
+<h1>async / await</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 162px; left: 720px; top: 105px; height: auto;" data-block-id="825998525c29804845714a1635fc3369"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 15;" dir="ui">
+<p><span>ES8 (</span><span style="color:rgb(34, 34, 34); text-align:start">2017)</span></p>
+</div></div></section></section><section class="stack" data-id="06ae30d60673e97e4852a4c331d8d4e7"><section data-id="712251b0a0386a33fe44c069a6146610"><div class="sl-block" data-block-type="text" style="width: 806px; left: 237px; top: 24px; height: auto;" data-block-id="44bff0658828ca53d40df99eb2490498"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
 <h1>generators</h1>
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 163px; left: 719px; top: 105px; height: auto;" data-block-id="61a339b0497e7224c98241dba1a60fa3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
@@ -438,7 +488,7 @@ worker.addEventListener("message", ({ id, type, data }) =&gt; {
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":956571,"username":"mariuslinders","name":"Marius Linders","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/-3iw8Mi9kCuU/AAAAAAAAAAI/AAAAAAAABQM/poAoXG0pdVQ/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":2167718,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"marius.linders@hotmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":2469692,"storage_limit":262144000},"deck":{"id":1365700,"slug":"deck","title":"deck","description":"","width":1280,"height":720,"visibility":"all","published_at":"2018-11-05T11:37:05.283Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/ca85a9c4601e3675e559fbb6cf3fd55f/thumb.jpg?1541512463","view_count":0,"user":{"id":956571,"username":"mariuslinders","name":"Marius Linders","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/-3iw8Mi9kCuU/AAAAAAAAAAI/AAAAAAAABQM/poAoXG0pdVQ/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":2167718,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":18,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1541515208285,"font_typekit":null,"font_google":null,"notes":{"43b02fa2e98cdc1872e77058eeedf627":"Bij het uitvoeren van deze code gebeurt het volgende in de event cycle:\n\n1. de state is leeg\n\n2. console.log('Hi') wordt toegevoegd aan de call stack\n\n3. en wordt direct uitgevoerd\n\n4. en zodra deze klaar is weer verwijderd van de call stack\n\n5. setTimeout wordt toegevoegd aan de call stack\n\n6.  en wordt direct uitgevoerd\nde setTimeout is een WebAPI, de browser gaat het aftellen afhandelen\n\n7. de setTimeout call is zelf is klaar en wordt verwijderd van de call stack\n\n8. console.log('Bye') wordt toegevoegd aan de call stack\n\n9. en wordt direct uitgevoerd\n\n10. console.log('Bye')  wordt verwijderd van de call stack\n\n11. na ! minimaal ! 5000 ms is de timer klaar en voegt de browser de cb1 callback toe aan de callback queue\n\n12. wanneer de call stack leeg is verplaatst de event loop de eerste callback van de callback queue naar call stack\n\n13. de callback wordt uitgevoerd en voegt de console.log('cb1') toe aan de call stack\n\n14. en wordt direct uitgevoerd\n\n15. en weer verwijderd van de call stack\n\n16. alles calls vanuit cb1 zijn nu klaar, dus cb1 wordt ook verwijderd van de call stack","985d1d95faada8ed43b555d6cb973cf7":"callback queue is first in first out\ncall stack is last in first out"}},"user":{"id":956571,"username":"mariuslinders","name":"Marius Linders","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/-3iw8Mi9kCuU/AAAAAAAAAAI/AAAAAAAABQM/poAoXG0pdVQ/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":2167718,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":956571,"username":"mariuslinders","name":"Marius Linders","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/-3iw8Mi9kCuU/AAAAAAAAAAI/AAAAAAAABQM/poAoXG0pdVQ/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":2167718,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"marius.linders@hotmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":2469692,"storage_limit":262144000},"deck":{"id":1365700,"slug":"deck","title":"deck","description":"","width":1280,"height":720,"visibility":"all","published_at":"2018-11-05T11:37:05.283Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/ca85a9c4601e3675e559fbb6cf3fd55f/thumb.jpg?1541512463","view_count":0,"user":{"id":956571,"username":"mariuslinders","name":"Marius Linders","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/-3iw8Mi9kCuU/AAAAAAAAAAI/AAAAAAAABQM/poAoXG0pdVQ/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":2167718,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":22,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1541578127299,"font_typekit":null,"font_google":null,"notes":{"43b02fa2e98cdc1872e77058eeedf627":"Bij het uitvoeren van deze code gebeurt het volgende in de event cycle:\n\n1. de state is leeg\n\n2. console.log('Hi') wordt toegevoegd aan de call stack\n\n3. en wordt direct uitgevoerd\n\n4. en zodra deze klaar is weer verwijderd van de call stack\n\n5. setTimeout wordt toegevoegd aan de call stack\n\n6.  en wordt direct uitgevoerd\nde setTimeout is een WebAPI, de browser gaat het aftellen afhandelen\n\n7. de setTimeout call is zelf is klaar en wordt verwijderd van de call stack\n\n8. console.log('Bye') wordt toegevoegd aan de call stack\n\n9. en wordt direct uitgevoerd\n\n10. console.log('Bye')  wordt verwijderd van de call stack\n\n11. na ! minimaal ! 5000 ms is de timer klaar en voegt de browser de cb1 callback toe aan de callback queue\n\n12. wanneer de call stack leeg is verplaatst de event loop de eerste callback van de callback queue naar call stack\n\n13. de callback wordt uitgevoerd en voegt de console.log('cb1') toe aan de call stack\n\n14. en wordt direct uitgevoerd\n\n15. en weer verwijderd van de call stack\n\n16. alles calls vanuit cb1 zijn nu klaar, dus cb1 wordt ook verwijderd van de call stack","985d1d95faada8ed43b555d6cb973cf7":"callback queue is first in first out\ncall stack is last in first out"}},"user":{"id":956571,"username":"mariuslinders","name":"Marius Linders","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/-3iw8Mi9kCuU/AAAAAAAAAAI/AAAAAAAABQM/poAoXG0pdVQ/photo.jpg","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":2167718,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
